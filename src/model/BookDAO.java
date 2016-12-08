@@ -27,4 +27,15 @@ public class BookDAO {
         }
         return list;
     }
+
+    public BooksEntity getBookDetails(String id) {
+        BooksEntity book = null;
+        try {
+            Query query = em.createQuery("select b from BooksEntity b where b.id = '" + id + "'");
+            book = (BooksEntity)query.getSingleResult();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return book;
+    }
 }
