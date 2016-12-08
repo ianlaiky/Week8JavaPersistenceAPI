@@ -10,4 +10,4 @@ public class EMF {
     public static EntityManagerFactory get() {
         return emfInstance;
     }
-}sdf
+}
