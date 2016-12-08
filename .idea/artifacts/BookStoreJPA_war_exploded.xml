@@ -7,6 +7,11 @@
         <element id="directory" name="classes">
           <element id="module-output" name="BookStoreJPA" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="mysql:mysql-connector-java:5.1.40" />
+          <element id="library" level="project" name="JPA 2.0-2.0" />
+          <element id="library" level="project" name="org.eclipse.persistence:eclipselink:2.6.2" />
+        </element>
       </element>
     </root>
   </artifact>
